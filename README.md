@@ -1,79 +1,77 @@
-**Personalized Health Monitoring System using Machine Learning**
+**Personalized Health Monitoring System with Machine Learning**
 
-An intelligent health monitoring web application designed to analyze patient vitals and predict risk levels using machine learning.This system enables early detection of health anomalies and provides personalized health recommendations in real-time.
+This project presents a smart health monitoring web platform that leverages machine learning to evaluate patient vital signs and determine their health risk level. It acts as an early-warning system by identifying unusual patterns in real time and delivering personalized health recommendations to users.
 
-**Features:**
+**Key Features**
 
-Predicts High Risk / Low Risk using vital signs.
+Risk Classification: Predicts whether a patient falls under High Risk or Low Risk based on their vitals.
 
-Built-in Decision Tree ML model with 91.78% accuracy.
+ML-Driven Predictions: Employs a Decision Tree model with an achieved accuracy of 91.78%.
 
-Smart suggestions using Gemini API.
+AI-Based Suggestions: Uses the Gemini API to provide personalized healthcare advice.
 
-React frontend and Flask backend with REST API integration.
+Interactive Interface: Built with React for a clean, responsive, and dynamic user experience.
 
-Clean UI with real-time risk prediction and feedback.
+Data-Backed Insights: Trained on a large dataset of clinically validated patient records for reliability.
 
-Utilizes real-world patient data for better reliability.
+**Technology Stack**
 
-**Technologies Used:**
+Frontend: React.js, React Router, Framer Motion for smooth animations
 
-**Frontend**: React.js, Framer Motion, React Router
+Backend: Flask with REST API endpoints in Python
 
-**Backend**: Flask REST API, Python
+Machine Learning: Decision Tree (scikit-learn) with Pickle for model deployment
 
-**ML** **Model**: Decision Tree (scikit-learn), Pickle
+API Integration: Gemini Generative AI for smart recommendations
 
-**API**: Gemini Generative AI for health suggestions
+Supporting Tools: NumPy, Pandas, Matplotlib, VS Code
 
-**Others**: NumPy, Pandas, Matplotlib, VS Code
+**Dataset Information**
 
-**Dataset:**
+Origin: Dataset derived from clinically validated patient vital signs
 
-**Source**: Clinically verified human vital signs dataset.
+Attributes: Includes Heart Rate, Respiratory Rate, Oxygen Saturation, Blood Pressure, Body Temperature, Age, Gender, Height, Weight, HRV, BMI, and MAP
 
-**Attributes** include: Heart rate, Respiratory rate, Oxygen Saturation, Blood Pressure, Body Temperature, Age, Gender, Height, Weight, HRV, BMI, MAP
+Size: Over 200,000 patient samples
 
-**Total** **samples**: Over 200,000
+Label: Binary classification into High Risk or Low Risk categories
 
-**Target**: Risk Category (High Risk / Low Risk)
+**Model Development & Results**
 
-**Model** **Training**:
+Algorithms Evaluated: Decision Tree, Random Forest, One-Class SVM, Logistic Regression, Naive Bayes
 
-**Algorithms** **tested**: Decision Tree, Random Forest, One-Class SVM
+Chosen Model: Decision Tree (Entropy Criterion) providing 91.78% accuracy
 
-**Final** **Model**: Decision Tree (Entropy-based) with 91.78% accuracy
+Data Preparation: Applied Min-Max scaling, handled outliers, and encoded categorical variables
 
-Preprocessing included Min-Max Scaling, outlier detection, and label encoding
+Performance Metrics: Evaluated using Precision, Recall, F1-Score, Specificity, and Confusion Matrix
 
-**Evaluation** **Metrics**: Confusion Matrix, Precision, Recall, F1-Score, Specificity
+**Accuracy Results Across Models:**
 
-**Objective**:
+Decision Tree → 91.78%
 
-To develop a smart, accessible, and real-time health support tool that:
+Random Forest → 84.71%
 
-Predicts user risk levels based on vital input
+Logistic Regression → 81.80%
 
-Offers instant feedback and intelligent suggestions
+Naive Bayes → 90.42%
 
-**Results** (Accuracy %):
+**Project Objective**
 
-Decision Tree: 91.78
+The system is designed to function as an accessible, real-time healthcare assistant that:
 
-Random Forest: 84.71
+Monitors and evaluates user health indicators
 
-Logistic Regression: 81.80
+Generates instant feedback and AI-driven advice
 
-Naive Bayes: 90.42
+Assists in reducing dependency on clinical resources by enabling early detection and self-assessment
 
-Eases burden on clinical resources with early detection and self-assessment
+**Future Enhancements**
 
-**Future** **Scope**:
+Integration with EHR: Linking with electronic health records for patient-specific analysis
 
-Integration with EHR systems for personalized diagnostics
+IoT and Wearables: Real-time data input from smart health devices and trackers
 
-Development of health wearables and IoT integration
+Automated Alerts: Immediate notifications for abnormal health conditions
 
-Smart anomaly alerts with real-time notifications
-
-Image-based diagnostics using deep learning
+Deep Learning Expansion: Incorporating image-based diagnostics for broader medical applications
